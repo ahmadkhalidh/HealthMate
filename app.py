@@ -17,13 +17,13 @@ load_dotenv()
 
 # Retrieve API keys from environment variables
 PINECONE_API_KEY = os.environ.get('PINECONE_API_KEY')
-GROQ_API_KEY = os.environ.get('GROQ_API_KEY')  # Ensure this is set in your environment
+GROQ_API_KEY = os.environ.get('GROQ_API_KEY')
 
 # Set environment variables
 os.environ["PINECONE_API_KEY"] = PINECONE_API_KEY
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
 
-# Function to download embeddings (assuming this function exists in your helper)
+# Function to download embeddings from helper.py
 embeddings = download_hugging_face_embeddings()
 
 index_name = "healthbot"
