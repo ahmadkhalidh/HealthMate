@@ -172,3 +172,12 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# My code under development
+templates
+model
+static
+Data
+template.py
+modelling.py
